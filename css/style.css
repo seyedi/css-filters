@@ -112,8 +112,7 @@ body
 }
 
 .mylist md-list-item {
-  padding-left: 2em;
-  padding-top: 0;
+  padding: 0;
   border-top    : 1px solid #FFF;
   border-bottom : 1px solid #ddd;
   border-right: 1px solid #ddd;
@@ -134,9 +133,11 @@ body
 
 .mylist .md-button {
   width: 100%;
+  margin: 0;
   text-align: left;
   background-color: transparent;
   color : #454545;
+  padding-left: 2.3em;
 
 }
 
