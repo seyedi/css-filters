@@ -22,4 +22,11 @@ app.controller('AppCtrl', ['$scope', '$timeout', '$mdSidenav', '$mdUtil', functi
   };
 
 }]);
+
+
+app.filter('round', function() {
+  return function(number) {
+    return Math.round(number * 10) / 10;
+  }
+});
     

@@ -69,7 +69,7 @@
       <md-content flex class="md-padding">
         
         <md-card class="mycard show" id="blur" ng-init="blur.value=2">
-          <img src="images/1.jpg" class="md-card-image" style="-webkit-filter: blur({{blur.value}}px); filter: blur({{blur.value}}px);" />
+          <img src="images/1.jpg" class="md-card-image" style="-webkit-filter: blur({{blur.value|round}}px); filter: blur({{blur.value|round}}px);" />
           <md-card-content>
             <div layout>
               <div flex="15" layout layout-align="center center">
@@ -89,14 +89,14 @@
 
           <div class="code-area-container">
             <div class="code-area">
-<span class="token-property">-webkit-filter</span>: <span class="token-function">blur</span>({{blur.value}}px);
-        <span class="token-property">filter</span>: <span class="token-function">blur</span>({{blur.value}}px);
+<span class="token-property">-webkit-filter</span>: <span class="token-function">blur</span>({{blur.value|round}}px);
+        <span class="token-property">filter</span>: <span class="token-function">blur</span>({{blur.value|round}}px);
             </div>
           </div>
         </md-card>
 
         <md-card class="mycard" id="brightness" ng-init="brightness.value=2">
-          <img src="images/1.jpg" class="md-card-image" style="-webkit-filter: brightness({{brightness.value}}); filter: brightness({{brightness.value}});" />
+          <img src="images/1.jpg" class="md-card-image" style="-webkit-filter: brightness({{brightness.value|round}}); filter: brightness({{brightness.value|round}});" />
           <md-card-content>
             <div layout>
               <div flex="15" layout layout-align="center center">
@@ -116,14 +116,14 @@
 
           <div class="code-area-container">
             <div class="code-area">
-<span class="token-property">-webkit-filter</span>: <span class="token-function">brightness</span>({{brightness.value}});
-        <span class="token-property">filter</span>: <span class="token-function">brightness</span>({{brightness.value}});
+<span class="token-property">-webkit-filter</span>: <span class="token-function">brightness</span>({{brightness.value|round}});
+        <span class="token-property">filter</span>: <span class="token-function">brightness</span>({{brightness.value|round}});
             </div>
           </div>
         </md-card>
 
         <md-card class="mycard" id="contrast" ng-init="contrast.value=2">
-          <img src="images/1.jpg" class="md-card-image" style="-webkit-filter: contrast({{contrast.value}}); filter: contrast({{contrast.value}});">
+          <img src="images/1.jpg" class="md-card-image" style="-webkit-filter: contrast({{contrast.value|round}}); filter: contrast({{contrast.value|round}});">
           <md-card-content>
             <div layout>
               <div flex="15" layout layout-align="center center">
@@ -143,14 +143,14 @@
 
           <div class="code-area-container">
             <div class="code-area">
-<span class="token-property">-webkit-filter</span>: <span class="token-function">contrast</span>({{contrast.value}});
-        <span class="token-property">filter</span>: <span class="token-function">contrast</span>({{contrast.value}});
+<span class="token-property">-webkit-filter</span>: <span class="token-function">contrast</span>({{contrast.value|round}});
+        <span class="token-property">filter</span>: <span class="token-function">contrast</span>({{contrast.value|round}});
             </div>
           </div>
         </md-card>
 
         <md-card class="mycard" id="grayscale" ng-init="grayscale.value=.5">
-          <img src="images/1.jpg" class="md-card-image" style="-webkit-filter: grayscale({{grayscale.value}}); filter: grayscale({{grayscale.value}});">
+          <img src="images/1.jpg" class="md-card-image" style="-webkit-filter: grayscale({{grayscale.value|round}}); filter: grayscale({{grayscale.value|round}});">
           <md-card-content>
             <div layout>
               <div flex="15" layout layout-align="center center">
@@ -170,14 +170,14 @@
 
           <div class="code-area-container">
             <div class="code-area">
-<span class="token-property">-webkit-filter</span>: <span class="token-function">grayscale</span>({{grayscale.value}});
-        <span class="token-property">filter</span>: <span class="token-function">grayscale</span>({{grayscale.value}});
+<span class="token-property">-webkit-filter</span>: <span class="token-function">grayscale</span>({{grayscale.value|round}});
+        <span class="token-property">filter</span>: <span class="token-function">grayscale</span>({{grayscale.value|round}});
             </div>
           </div>
         </md-card>
 
         <md-card class="mycard" id="hueRotate" ng-init="hueRotate.value=150">
-          <img src="images/1.jpg" class="md-card-image" style="-webkit-filter: hue-rotate({{hueRotate.value}}deg); filter: hue-rotate({{hueRotate.value}}deg);">
+          <img src="images/1.jpg" class="md-card-image" style="-webkit-filter: hue-rotate({{hueRotate.value|round}}deg); filter: hue-rotate({{hueRotate.value|round}}deg);">
           <md-card-content>
             <div layout>
               <div flex="15" layout layout-align="center center">
@@ -197,14 +197,14 @@
 
           <div class="code-area-container">
             <div class="code-area">
-<span class="token-property">-webkit-filter</span>: <span class="token-function">hue-rotate</span>({{hueRotate.value}}deg);
-        <span class="token-property">filter</span>: <span class="token-function">hue-rotate</span>({{hueRotate.value}}deg);
+<span class="token-property">-webkit-filter</span>: <span class="token-function">hue-rotate</span>({{hueRotate.value|round}}deg);
+        <span class="token-property">filter</span>: <span class="token-function">hue-rotate</span>({{hueRotate.value|round}}deg);
             </div>
           </div>
         </md-card>
 
         <md-card class="mycard" id="invert" ng-init="invert.value=1">
-          <img src="images/1.jpg" class="md-card-image" style="-webkit-filter: invert({{invert.value}}); filter: invert({{invert.value}});">
+          <img src="images/1.jpg" class="md-card-image" style="-webkit-filter: invert({{invert.value|round}}); filter: invert({{invert.value|round}});">
           <md-card-content>
             <div layout>
               <div flex="15" layout layout-align="center center">
@@ -224,14 +224,14 @@
 
           <div class="code-area-container">
             <div class="code-area">
-<span class="token-property">-webkit-filter</span>: <span class="token-function">invert</span>({{invert.value}});
-        <span class="token-property">filter</span>: <span class="token-function">invert</span>({{invert.value}});
+<span class="token-property">-webkit-filter</span>: <span class="token-function">invert</span>({{invert.value|round}});
+        <span class="token-property">filter</span>: <span class="token-function">invert</span>({{invert.value|round}});
             </div>
           </div>
         </md-card>
 
         <md-card class="mycard" id="opacity" ng-init="opacity.value=.5">
-          <img src="images/1.jpg" class="md-card-image" style="-webkit-filter: opacity({{opacity.value}}); filter: opacity({{opacity.value}});">
+          <img src="images/1.jpg" class="md-card-image" style="-webkit-filter: opacity({{opacity.value|round}}); filter: opacity({{opacity.value|round}});">
           <md-card-content>
             <div layout>
               <div flex="15" layout layout-align="center center">
@@ -251,14 +251,14 @@
 
           <div class="code-area-container">
             <div class="code-area">
-<span class="token-property">-webkit-filter</span>: <span class="token-function">opacity</span>({{opacity.value}});
-        <span class="token-property">filter</span>: <span class="token-function">opacity</span>({{opacity.value}});
+<span class="token-property">-webkit-filter</span>: <span class="token-function">opacity</span>({{opacity.value|round}});
+        <span class="token-property">filter</span>: <span class="token-function">opacity</span>({{opacity.value|round}});
             </div>
           </div>
         </md-card>
 
         <md-card class="mycard" id="saturate" ng-init="saturate.value=0">
-          <img src="images/1.jpg" class="md-card-image" style="-webkit-filter: saturate({{saturate.value}}); filter: saturate({{saturate.value}});">
+          <img src="images/1.jpg" class="md-card-image" style="-webkit-filter: saturate({{saturate.value|round}}); filter: saturate({{saturate.value|round}});">
           <md-card-content>
             <div layout>
               <div flex="15" layout layout-align="center center">
@@ -278,14 +278,14 @@
 
           <div class="code-area-container">
             <div class="code-area">
-<span class="token-property">-webkit-filter</span>: <span class="token-function">saturate</span>({{saturate.value}});
-        <span class="token-property">filter</span>: <span class="token-function">saturate</span>({{saturate.value}});
+<span class="token-property">-webkit-filter</span>: <span class="token-function">saturate</span>({{saturate.value|round}});
+        <span class="token-property">filter</span>: <span class="token-function">saturate</span>({{saturate.value|round}});
             </div>
           </div>
         </md-card>
 
         <md-card class="mycard" id="sepia" ng-init="sepia.value=.5">
-          <img src="images/1.jpg" class="md-card-image" style="-webkit-filter: sepia({{sepia.value}}); filter: sepia({{sepia.value}});">
+          <img src="images/1.jpg" class="md-card-image" style="-webkit-filter: sepia({{sepia.value|round}}); filter: sepia({{sepia.value|round}});">
           <md-card-content>
             <div layout>
               <div flex="15" layout layout-align="center center">
@@ -305,14 +305,14 @@
 
           <div class="code-area-container">
             <div class="code-area">
-<span class="token-property">-webkit-filter</span>: <span class="token-function">sepia</span>({{sepia.value}});
-        <span class="token-property">filter</span>: <span class="token-function">sepia</span>({{sepia.value}});
+<span class="token-property">-webkit-filter</span>: <span class="token-function">sepia</span>({{sepia.value|round}});
+        <span class="token-property">filter</span>: <span class="token-function">sepia</span>({{sepia.value|round}});
             </div>
           </div>
         </md-card>
 
         <md-card class="mycard" id="dropShadow">
-          <img src="images/1.jpg" class="md-card-image" style="-webkit-filter:  drop-shadow({{dropShadow.x}}px {{dropShadow.y}}px {{dropShadow.z}}px #000); filter:  drop-shadow({{dropShadow.x}}px {{dropShadow.y}}px {{dropShadow.z}}px #000);">
+          <img src="images/1.jpg" class="md-card-image" style="-webkit-filter:  drop-shadow({{dropShadow.x|round}}px {{dropShadow.y|round}}px {{dropShadow.z|round}}px #000); filter:  drop-shadow({{dropShadow.x|round}}px {{dropShadow.y|round}}px {{dropShadow.z|round}}px #000);">
           <md-card-content>
             <div layout ng-init="dropShadow.x=1">
               <div flex="15" layout layout-align="center center">
@@ -356,38 +356,38 @@
 
           <div class="code-area-container">
             <div class="code-area">
-<span class="token-property">-webkit-filter</span>: <span class="token-function">drop-shadow</span>({{dropShadow.x}}px {{dropShadow.y}}px {{dropShadow.z}}px #000);
-        <span class="token-property">filter</span>: <span class="token-function">drop-shadow</span>({{dropShadow.x}}px {{dropShadow.y}}px {{dropShadow.z}}px #000);
+<span class="token-property">-webkit-filter</span>: <span class="token-function">drop-shadow</span>({{dropShadow.x|round}}px {{dropShadow.y|round}}px {{dropShadow.z|round}}px #000);
+        <span class="token-property">filter</span>: <span class="token-function">drop-shadow</span>({{dropShadow.x|round}}px {{dropShadow.y|round}}px {{dropShadow.z|round}}px #000);
             </div>
           </div>
         </md-card>
 
         <md-card class="mycard" id="all" ng-init="blur.value1=0;brightness.value1=1;contrast.value1=1;grayscale.value1=0;hueRotate.value1=0;invert.value1=0;opacity.value1=1;saturate.value1=1;sepia.value1=0;dropShadow.x1=0;dropShadow.y1=0;dropShadow.z1=0;">
           <img src="images/1.jpg" class="md-card-image" 
-            style="-webkit-filter: blur({{blur.value1}}px) 
-                  brightness({{brightness.value1}})
-                  contrast({{contrast.value1}})
-                  grayscale({{grayscale.value1}})
-                  hue-rotate({{hueRotate.value1}}deg)
-                  invert({{invert.value1}})
-                  opacity({{opacity.value1}})
-                  saturate({{saturate.value1}})
-                  sepia({{sepia.value1}})
-                  drop-shadow({{dropShadow.x1}}px {{dropShadow.y1}}px {{dropShadow.z1}}px #000);"
+            style="-webkit-filter: blur({{blur.value1|round}}px) 
+                  brightness({{brightness.value1|round}})
+                  contrast({{contrast.value1|round}})
+                  grayscale({{grayscale.value1|round}})
+                  hue-rotate({{hueRotate.value1|round}}deg)
+                  invert({{invert.value1|round}})
+                  opacity({{opacity.value1|round}})
+                  saturate({{saturate.value1|round}})
+                  sepia({{sepia.value1|round}})
+                  drop-shadow({{dropShadow.x1|round}}px {{dropShadow.y1|round}}px {{dropShadow.z1|round}}px #000);"
           />        
 
           <div class="code-area-container">
             <div class="code-area">
-<span class="token-property">filter</span>: <span class="token-function">blur</span>({{blur.value1}}px)
-        <span class="token-function">brightness</span>({{brightness.value1}})
-        <span class="token-function">contrast</span>({{contrast.value1}})
-        <span class="token-function">grayscale</span>({{grayscale.value1}})
-        <span class="token-function">hue-rotate</span>({{hueRotate.value1}}deg)
-        <span class="token-function">invert</span>({{invert.value1}})
-        <span class="token-function">opacity</span>({{opacity.value1}})
-        <span class="token-function">saturate</span>({{saturate.value1}})
-        <span class="token-function">sepia</span>({{sepia.value1}})
-        <span class="token-function">drop-shadow</span>({{dropShadow.x1}}px {{dropShadow.y1}}px {{dropShadow.z1}}px #000);
+<span class="token-property">filter</span>: <span class="token-function">blur</span>({{blur.value1|round}}px)
+        <span class="token-function">brightness</span>({{brightness.value1|round}})
+        <span class="token-function">contrast</span>({{contrast.value1|round}})
+        <span class="token-function">grayscale</span>({{grayscale.value1|round}})
+        <span class="token-function">hue-rotate</span>({{hueRotate.value1|round}}deg)
+        <span class="token-function">invert</span>({{invert.value1|round}})
+        <span class="token-function">opacity</span>({{opacity.value1|round}})
+        <span class="token-function">saturate</span>({{saturate.value1|round}})
+        <span class="token-function">sepia</span>({{sepia.value1|round}})
+        <span class="token-function">drop-shadow</span>({{dropShadow.x1|round}}px {{dropShadow.y1|round}}px {{dropShadow.z1|round}}px #000);
             </div>
           </div>
         </md-card>
